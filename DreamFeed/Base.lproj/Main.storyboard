@@ -18,18 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ho1-Dw-WDE">
-                                <rect key="frame" x="20" y="96" width="374" height="732"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" name="YP Black (iOS)"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="327" id="Bwi-4h-eut" customClass="ImagesListCell" customModule="DreamFeed" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="374" height="327"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="327" id="Bwi-4h-eut" customClass="ImagesListCell" customModule="DreamFeed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="327"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bwi-4h-eut" id="STm-Vx-lUd">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="327"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-0g-X2i" userLabel="Cell Image">
-                                                    <rect key="frame" x="16" y="4" width="342" height="319"/>
+                                                    <rect key="frame" x="16" y="4" width="382" height="319"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="16"/>
@@ -44,21 +44,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovt-13-0sq" userLabel="likeButton">
-                                                    <rect key="frame" x="328" y="4" width="30" height="28"/>
+                                                    <rect key="frame" x="354" y="4" width="44" height="44"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="likeOn"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Fuw-0g-X2i" firstAttribute="trailing" secondItem="Ovt-13-0sq" secondAttribute="trailing" id="2hR-Ov-FcH"/>
                                                 <constraint firstItem="Fuw-0g-X2i" firstAttribute="top" secondItem="STm-Vx-lUd" secondAttribute="top" constant="4" id="7w4-hM-lHd"/>
                                                 <constraint firstAttribute="bottom" secondItem="Fuw-0g-X2i" secondAttribute="bottom" constant="4" id="A40-zt-ORd"/>
                                                 <constraint firstItem="Fuw-0g-X2i" firstAttribute="leading" secondItem="STm-Vx-lUd" secondAttribute="leading" constant="16" id="Nq3-V5-utI"/>
+                                                <constraint firstItem="FoO-Uc-56b" firstAttribute="leading" secondItem="Fuw-0g-X2i" secondAttribute="leading" constant="8" id="d0I-ZW-mxk"/>
+                                                <constraint firstItem="Ovt-13-0sq" firstAttribute="top" secondItem="Fuw-0g-X2i" secondAttribute="top" id="d56-QO-8Gr"/>
+                                                <constraint firstItem="Ovt-13-0sq" firstAttribute="trailing" secondItem="STm-Vx-lUd" secondAttribute="trailing" constant="-16" id="ddR-aW-meX"/>
                                                 <constraint firstAttribute="trailing" secondItem="Fuw-0g-X2i" secondAttribute="trailing" constant="16" id="j22-2S-t24"/>
-                                                <constraint firstItem="FoO-Uc-56b" firstAttribute="leading" secondItem="Fuw-0g-X2i" secondAttribute="leading" constant="8" id="k9D-7m-DSP"/>
-                                                <constraint firstItem="Fuw-0g-X2i" firstAttribute="bottom" secondItem="FoO-Uc-56b" secondAttribute="bottom" constant="8" id="ohQ-qc-LcM"/>
-                                                <constraint firstItem="Ovt-13-0sq" firstAttribute="top" secondItem="Fuw-0g-X2i" secondAttribute="top" id="uUp-uF-Tbp"/>
-                                                <constraint firstItem="Fuw-0g-X2i" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FoO-Uc-56b" secondAttribute="trailing" constant="8" id="zSA-6v-SES"/>
+                                                <constraint firstItem="Fuw-0g-X2i" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FoO-Uc-56b" secondAttribute="trailing" constant="8" id="pFW-9h-p3N"/>
+                                                <constraint firstItem="Fuw-0g-X2i" firstAttribute="bottom" secondItem="FoO-Uc-56b" secondAttribute="bottom" constant="8" id="sOu-hD-bFa"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -84,10 +84,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black (iOS)"/>
                         <constraints>
-                            <constraint firstItem="ho1-Dw-WDE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4cH-KQ-mG3"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ho1-Dw-WDE" secondAttribute="bottom" id="cbo-KZ-4ac"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ho1-Dw-WDE" secondAttribute="trailing" id="k5d-VP-RMg"/>
-                            <constraint firstItem="ho1-Dw-WDE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="kvz-qA-v5h"/>
+                            <constraint firstItem="ho1-Dw-WDE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4cH-KQ-mG3"/>
+                            <constraint firstAttribute="bottom" secondItem="ho1-Dw-WDE" secondAttribute="bottom" id="cbo-KZ-4ac"/>
+                            <constraint firstAttribute="trailing" secondItem="ho1-Dw-WDE" secondAttribute="trailing" id="k5d-VP-RMg"/>
+                            <constraint firstItem="ho1-Dw-WDE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kvz-qA-v5h"/>
                         </constraints>
                     </view>
                     <connections>
@@ -101,7 +101,7 @@
     </scenes>
     <resources>
         <image name="0" width="800" height="529.5"/>
-        <image name="likeOn" width="30" height="27.5"/>
+        <image name="likeOn" width="44" height="44"/>
         <namedColor name="YP Black (iOS)">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
